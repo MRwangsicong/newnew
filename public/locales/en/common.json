@@ -1,0 +1,120 @@
+{
+  "hero": {
+    "title": "Are you struggling to find blockchain tools?",
+    "description": "Maybe you've heard the rumors and they're getting louder AIGbot is developed by top programmers in the cryptocurrency space. We focus on service and user experience The goal is to solve the troubles of crypto enthusiasts",
+    "getDownload": "Get Download",
+    "joinTelegram": "Join Telegram"
+  },
+  "footer": {
+    "copyright": "All rights reserved AGIBOT © 2025."
+  },
+  "joinUs": {
+    "title": "Join Us now",
+    "description": "Business cooperation, business consulting, VIP customized services",
+    "button": "Join Group",
+    "services": [
+      "Business Cooperation",
+      "Professional Consulting",
+      "VIP Custom Services",
+      "24/7 Support"
+    ]
+  },
+  "userFeedback": {
+    "title": "Listen to all your users",
+    "description": "Many Bot are unable to meet the needs of crypto enthusiasts as well as Bot are unable to adapt to changes in the market in a timely manner for this reason many missed opportunities let's solve these troubles.",
+    "points": [
+      "Adapts quickly to market changes",
+      "Built for crypto enthusiasts",
+      "Never miss opportunities",
+      "Real-time market response"
+    ]
+  },
+  "keyFeatures": {
+    "title": "Key Features",
+    "safetyMeasure": {
+      "title": "Safety measure",
+      "subtitle": "Data privacy",
+      "description": "Data is stored locally, reducing the risk of data breaches and protecting user privacy."
+    },
+    "security": {
+      "title": "Higher security",
+      "subtitle": "Higher security",
+      "description": "There is no need to transmit data over the network, reducing the chance of interception or attack"
+    },
+    "latency": {
+      "title": "Reduce latency",
+      "subtitle": "Reduce latency",
+      "description": "Local processing of data does not"
+    }
+  },
+  "stats": {
+    "downloads": {
+      "number": "152K+",
+      "label": "Download"
+    },
+    "activity": {
+      "number": "102K+",
+      "label": "Activity"
+    },
+    "reception": {
+      "number": "82K+",
+      "label": "Well-received"
+    }
+  },
+  "features": {
+    "stability": {
+      "title": "Stability",
+      "description": "Our project is built on a solid foundation, offering stability and reliability in an otherwise unpredictable landscape."
+    },
+    "security": {
+      "title": "Security",
+      "description": "AIGbot puts the safety of your money first, AIGbot is independent of your local computer, that's why we don't do webside!"
+    },
+    "trustworthiness": {
+      "title": "Trustworthiness",
+      "description": "Comprehensive We started with the Solana Market Value Managemen bot Of course we go beyond that"
+    }
+  },
+  "header": {
+    "links": {
+      "home": "Home",
+      "achievements": "Achievements",
+      "aboutUs": "AboutUs",
+      "faq": "FAQ"
+    },
+    "userManual": "User manual"
+  },
+  "aboutUs": {
+    "heading": "About Us",
+    "subHeading": "What is AGIBOT",
+    "description": "AGI Bot is a Token batch fast only trading Robot",
+    "tags": [
+      "Auto Sniping",
+      "Jito Bundle",
+      "Fast & Secure swaps",
+      "Limit Orders",
+      "Copytrade"
+    ]
+  },
+  "faq": {
+    "heading": "FAQs",
+    "subHeading": "Frequently asked Questions",
+    "questions": [
+      {
+        "question": "How to download and login"
+      },
+      {
+        "question": "AIGBOT Version",
+        "answer": "AGIBOT has a personal free version and Market capitalization management paid version."
+      },
+      {
+        "question": "AGIBOT operating system",
+        "answer": "AGIBOT is available on Windows, Mac（Apple ）（Intel）  operating systems."
+      },
+      {
+        "question": "Personal version, market value management version difference",
+        "answer": "The personal version is free and provides a basic trading function, while the market value management version provides advanced trading functions and market capitalization management."
+      }
+    ]
+  }
+} 

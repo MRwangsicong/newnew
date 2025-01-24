@@ -1,0 +1,62 @@
+{
+    "en": {
+      
+      "content": {
+        "twitter": "Twitter",
+        "gitbook": "Gitbook",
+        "telegram": "Telegram",
+        "struggle_blockchain_tools": "Are you struggling to find blockchain tools?",
+        "rumors": "Maybe you've heard the rumors and they're getting louder",
+        "aigbot_developed": "AIGbot is developed by top programmers in the cryptocurrency space.",
+        "focus_service_experience": "We focus on service and user experience",
+        "goal_solve_troubles": "The goal is to solve the troubles of crypto enthusiasts.",
+        "what_is_agibot": "What is AGIBOT",
+        "agibot_description": "AGI Bot is a Token batch fast only trading Robot.",
+        "get_to_know_us": "Would you like to get to know us better?",
+        "many_bot_unable_meet_needs": "Many Bot are unable to meet the needs of crypto enthusiasts as well as Bot are unable to adapt to changes in the market in a timely manner for this reason many missed opportunities let's solve these troubles.",
+        "stability": "Stability",
+        "stability_description": "Our project is built on a solid foundation, offering stability and reliability in an otherwise unpredictable landscape.",
+        "security": "Security",
+        "security_description": "AIGbot puts the safety of your money first, AIGbot is independent of your local computer, that's why we don't do website!",
+        "trustworthiness": "Trustworthiness",
+        "comprehensive": "Comprehensive",
+        "solana_bot": "We started with the Solana Market Value Management bot. Of course, we go beyond that.",
+        "roadmap": "Roadmap",
+        "stage_one": "(STAGE ONE) X launch, Web launch, Telegram launch, Market Value Management bot Launched on Solana",
+        "stage_two": "(STAGE TWO) Formation of the invitation mechanism, Improvement of Solana Market Value Management bot, Release of EVM Market Value Management bot",
+        "stage_three": "(STAGE THREE) Customized versions of the robot according to customer needs, As well as aggregation of all robot functions on the market",
+        "stage_four": "(STAGE FOUR) More EVM support.",
+        "copyright": "© 2024 AgiBot - All Rights Reserved"
+      }
+    },
+    "zh": {
+      
+      "content": {
+        "twitter": "推特",
+        "gitbook": "Gitbook",
+        "telegram": "电报",
+        "struggle_blockchain_tools": "你在寻找区块链工具时遇到了困难吗？",
+        "rumors": "也许你听到了谣言，它们越来越响亮",
+        "aigbot_developed": "AIGbot 是由加密货币领域的顶级程序员开发的。",
+        "focus_service_experience": "我们专注于服务和用户体验",
+        "goal_solve_troubles": "目标是解决加密爱好者的烦恼。",
+        "what_is_agibot": "什么是 AGIBOT",
+        "agibot_description": "AGI Bot 是一个批量快速交易机器人。",
+        "get_to_know_us": "你想更好地了解我们吗？",
+        "many_bot_unable_meet_needs": "许多机器人无法满足加密爱好者的需求，且无法及时适应市场变化，因此错过了许多机会，让我们解决这些问题。",
+        "stability": "稳定性",
+        "stability_description": "我们的项目建立在坚实的基础上，在不可预测的环境中提供稳定性和可靠性。",
+        "security": "安全",
+        "security_description": "AIGbot 将您的资金安全放在首位，AIGbot 独立于您的本地计算机，这就是为什么我们不做网站！",
+        "trustworthiness": "可信赖性",
+        "comprehensive": "全面",
+        "solana_bot": "我们从 Solana 市值管理机器人开始。当然，我们不仅限于此。",
+        "roadmap": "路线图",
+        "stage_one": "（第一阶段）X 启动，网站启动，电报启动，Solana 上市值管理机器人启动",
+        "stage_two": "（第二阶段）邀请机制的形成，Solana 市值管理机器人的改进，EVM 市值管理机器人的发布",
+        "stage_three": "（第三阶段）根据客户需求定制的机器人版本，以及市场上所有机器人功能的聚合",
+        "stage_four": "（第四阶段）更多 EVM 支持。",
+        "copyright": "© 2024 AgiBot - 版权所有"
+      }
+    }
+  }

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles2.css">
+    <link rel="stylesheet" href="static/css/style3.css">
+    <title>AGI BOT Download</title>
+    <link rel="icon" href="/static/picture/favicon.ico" type="image/x-icon">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDW6S42PW1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VDW6S42PW1');
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            padding: 50px 0;
+            background-color: #33333300;
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .nav-bar {
+            margin-top: 20px;
+        }
+        .nav-bar button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .nav-bar button:hover {
+            background-color: #b500a9;
+        }
+        .nav-bar button.active {
+            background-color: #b500a9;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .download-card {
+            background-color: #ff9f9f99;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+        .download-card:hover {
+            transform: translateY(-10px);
+        }
+        .download-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .download-card h2 {
+            font-size: 1.5em;
+            margin: 20px 0 10px;
+        }
+        .download-card p {
+            font-size: 1em;
+            color: #666;
+        }
+        .download-card a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0078d7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        .download-card a:hover {
+            background-color: #b500a9;
+        }
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #0078d7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .language-switcher:hover {
+            background-color: #b500a9;
+        }
+        .flag {
+            width: 24px;
+            height: 24px;
+            margin-left: 5px;
+        }
+        @media (max-width: 768px) {
+            .download-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+        .changelog {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .changelog h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .changelog ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .changelog li {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="language-switcher" id="languageSwitcher" aria-label="Switch Language">
+        <span id="flagContainer">EN</span>
+        <img src="static/picture/en.png" alt="Switch to Chinese" class="flag" id="cnFlag" style="display: none;">
+        <img src="static/picture/cn.png" alt="Switch to English" class="flag" id="usFlag">
+    </a>
+
+    <div class="container">
+        <div class="header">
+            <h1 id="title">AGI BOT</h1>
+        </div>
+        <div class="nav-bar">
+            <button id="personalEditionBtn" class="active">个人版</button>
+            <button id="paidEditionBtn">付费版</button>
+        </div>
+        <div class="content" id="content">
+            <!-- Content will be loaded here based on selection -->
+        </div>
+        <div class="changelog" id="changelog">
+            <h2 id="changelogTitle">更新日志</h2>
+            <ul id="changelogList">
+                <li>v1.8.18 更新</li>
+                <li>首个二级邀请返佣机制</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            en: {
+                title: "AGI BOT",
+                personalEdition: "Personal Edition",
+                paidEdition: "Paid Edition",
+                macTitle: "Mac",
+                macIntelLink: "Mac (Intel) - Free",
+                macAppleLink: "Mac (Apple Silicon) - Free",
+                windowsTitle: "Windows",
+                windowsLink: "Windows - Free",
+                devMacIntelLink: "Mac (Intel) - Paid",
+                devMacAppleLink: "Mac (Apple Silicon) - Paid",
+                devWindowsLink: "Windows - Paid",
+                changelogTitle: "Changelog",
+                changelogItems: ["v1.8.18 Update", "First Level Invitation Commission Mechanism"]
+            },
+            cn: {
+                title: "AGI BOT",
+                personalEdition: "个人版",
+                paidEdition: "付费版",
+                macTitle: "Mac",
+                macIntelLink: "Mac (Intel) - 免费",
+                macAppleLink: "Mac (Apple 芯片版) - 免费",
+                windowsTitle: "Windows",
+                windowsLink: "Windows - 免费",
+                devMacIntelLink: "Mac (Intel) - 付费",
+                devMacAppleLink: "Mac (Apple 芯片版) - 付费",
+                devWindowsLink: "Windows - 付费",
+                changelogTitle: "更新日志",
+                changelogItems: ["v1.9.18 更新", "首个二级邀请返佣机制"]
+            }
+        };
+
+        let currentLanguage = localStorage.getItem('language') || (navigator.language.startsWith('zh') ? 'cn' : 'en');
+        let currentEdition = "personal";
+
+        document.getElementById("languageSwitcher").addEventListener("click", function(event) {
+            event.preventDefault();
+            currentLanguage = currentLanguage === "cn" ? "en" : "cn";
+            localStorage.setItem('language', currentLanguage);
+            updateLanguage();
+        });
+
+        document.getElementById("personalEditionBtn").addEventListener("click", function() {
+            currentEdition = "personal";
+            updateContent();
+            setActiveButton(this);
+        });
+
+        document.getElementById("paidEditionBtn").addEventListener("click", function() {
+            currentEdition = "paid";
+            updateContent();
+            setActiveButton(this);
+        });
+
+        function updateLanguage() {
+            document.getElementById("title").innerText = translations[currentLanguage].title;
+            document.getElementById("personalEditionBtn").innerText = translations[currentLanguage].personalEdition;
+            document.getElementById("paidEditionBtn").innerText = translations[currentLanguage].paidEdition;
+            document.getElementById("flagContainer").innerText = currentLanguage === "cn" ? "EN" : "CN";
+            document.getElementById("cnFlag").style.display = currentLanguage === "cn" ? "inline-block" : "none";
+            document.getElementById("usFlag").style.display = currentLanguage === "cn" ? "none" : "inline-block";
+            updateContent();
+            document.getElementById("changelogTitle").innerText = translations[currentLanguage].changelogTitle;
+        }
+
+        function updateContent() {
+            const contentDiv = document.getElementById("content");
+            contentDiv.innerHTML = "";
+            const title = currentEdition === "personal" ? translations[currentLanguage].personalEdition : translations[currentLanguage].paidEdition;
+            const editionData = currentEdition === "personal" ? [
+                {
+                    title: translations[currentLanguage].macTitle,
+                    links: [
+                        { text: translations[currentLanguage].macIntelLink, href: "./Download/AGIBotIntel.pkg" },
+                        { text: translations[currentLanguage].macAppleLink, href: "./Download/AGIBotApple.pkg" },
+                    ]
+                },
+                {
+                    title: translations[currentLanguage].windowsTitle,
+                    links: [
+                        { text: translations[currentLanguage].windowsLink, href: "./Download/AGIBot.exe" }
+                    ]
+                }
+            ] : [
+                {
+                    title: translations[currentLanguage].macTitle,
+                    links: [
+                        { text: translations[currentLanguage].devMacIntelLink, href: "./Download/AGIbotdevIntel.pkg" },
+                        { text: translations[currentLanguage].devMacAppleLink, href: "./Download/AGIbotdevApple.pkg" },
+                    ]
+                },
+                {
+                    title: translations[currentLanguage].windowsTitle,
+                    links: [
+                        { text: translations[currentLanguage].devWindowsLink, href: "./Download/AGIbotdev.exe" }
+                    ]
+                }
+            ];
+
+            editionData.forEach(section => {
+                const sectionDiv = document.createElement("div");
+                sectionDiv.className = "download-card";
+                const sectionTitle = document.createElement("h2");
+                sectionTitle.innerText = section.title;
+                sectionDiv.appendChild(sectionTitle);
+                section.links.forEach(link => {
+                    const linkElement = document.createElement("a");
+                    linkElement.href = link.href;
+                    linkElement.innerText = link.text;
+                    linkElement.setAttribute("onClick", `gtag('event', 'download', {'event_category': '${currentEdition === "personal" ? 'Personal Edition' : 'Paid Edition'}', 'event_label': '${link.text}'});`);
+                    sectionDiv.appendChild(linkElement);
+                });
+                contentDiv.appendChild(sectionDiv);
+            });
+            const changelogList = document.getElementById("changelogList");
+            changelogList.innerHTML = "";
+            translations[currentLanguage].changelogItems.forEach(item => {
+                const li = document.createElement("li");
+                li.innerText = item;
+                changelogList.appendChild(li);
+            });
+        }
+
+        function setActiveButton(button) {
+            document.querySelectorAll(".nav-bar button").forEach(btn => {
+                btn.classList.remove("active");
+            });
+            button.classList.add("active");
+        }
+
+        updateLanguage();
+    </script>
+</body>
+</html>

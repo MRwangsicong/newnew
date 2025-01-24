@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    background: url('/static/picture/6628c23fc27a5186f5df376d_row 02.svg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    padding: 50px 0;
+    position: relative;
+}
+.language-switcher {
+    margin: 10px;
+}
+
+.header h1 {
+    font-size: 4em;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0;
+    padding: 40px 0;
+    position: relative;
+    animation: neon 0.5s infinite alternate;
+}
+
+@keyframes neon {
+    0%, 100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+    }
+    50% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #000;
+    }
+}
+
+.download-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.download-card {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.download-card:hover {
+    transform: translateY(-10px);
+}
+
+.download-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.download-card h2 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+.download-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.download-card a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0078d7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-card a:hover {
+    background-color: #005bb5;
+}
+
+@media (max-width: 768px) {
+    .download-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

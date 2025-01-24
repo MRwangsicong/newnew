@@ -1,0 +1,120 @@
+{
+  "hero": {
+    "title": "您在寻找区块链工具时遇到困难吗？",
+    "description": "也许您已经听说过这些传言，而且声音越来越大。AIGbot 是由加密货币领域的顶尖程序员开发的。我们专注于服务和用户体验，目标是解决加密货币爱好者的困扰",
+    "getDownload": "立即下载",
+    "joinTelegram": "加入 Telegram"
+  },
+  "footer": {
+    "copyright": "AGIBOT 版权所有 © 2025"
+  },
+  "joinUs": {
+    "title": "立即加入我们",
+    "description": "商务合作、业务咨询、VIP定制服务",
+    "button": "加入群组",
+    "services": [
+      "商务合作",
+      "专业咨询",
+      "VIP定制服务",
+      "全天候支持"
+    ]
+  },
+  "userFeedback": {
+    "title": "倾听用户心声",
+    "description": "许多机器人无法满足加密货币爱好者的需求，也无法及时适应市场变化，导致错过许多机会。让我们一起解决这些问题。",
+    "points": [
+      "快速适应市场变化",
+      "专为加密货币爱好者打造",
+      "永不错过投资机会",
+      "实时市场响应"
+    ]
+  },
+  "keyFeatures": {
+    "title": "主要特点",
+    "safetyMeasure": {
+      "title": "安全措施",
+      "subtitle": "数据隐私",
+      "description": "数据本地存储，降低数据泄露风险，保护用户隐私。"
+    },
+    "security": {
+      "title": "更高安全性",
+      "subtitle": "更高安全性",
+      "description": "无需通过网络传输数据，降低被拦截或攻击的可能性"
+    },
+    "latency": {
+      "title": "降低延迟",
+      "subtitle": "降低延迟",
+      "description": "本地数据处理，无需等待"
+    }
+  },
+  "stats": {
+    "downloads": {
+      "number": "152K+",
+      "label": "下载量"
+    },
+    "activity": {
+      "number": "102K+",
+      "label": "活跃度"
+    },
+    "reception": {
+      "number": "82K+",
+      "label": "好评度"
+    }
+  },
+  "features": {
+    "stability": {
+      "title": "稳定性",
+      "description": "我们的项目建立在坚实的基础之上，在瞬息万变的市场中提供稳定可靠的服务。"
+    },
+    "security": {
+      "title": "安全性",
+      "description": "AIGbot 将您的资金安全放在首位，AIGbot 独立于您的本地计算机，这就是为什么我们不做网页版！"
+    },
+    "trustworthiness": {
+      "title": "可信赖",
+      "description": "我们从 Solana 市值管理机器人起步，当然我们的服务远不止于此"
+    }
+  },
+  "header": {
+    "links": {
+      "home": "首页",
+      "achievements": "成就",
+      "aboutUs": "关于我们",
+      "faq": "常见问题"
+    },
+    "userManual": "用户手册"
+  },
+  "aboutUs": {
+    "heading": "关于我们",
+    "subHeading": "什么是 AGIBOT",
+    "description": "AGI Bot 是一个快速批量交易机器人",
+    "tags": [
+      "自动狙击",
+      "Jito 打包",
+      "快速安全交换",
+      "限价订单",
+      "跟单交易"
+    ]
+  },
+  "faq": {
+    "heading": "常见问题",
+    "subHeading": "经常被问到的问题",
+    "questions": [
+      {
+        "question": "如何下载和登录"
+      },
+      {
+        "question": "AIGBOT 版本",
+        "answer": "AGIBOT 有个人免费版和市值管理付费版。"
+      },
+      {
+        "question": "AGIBOT 操作系统",
+        "answer": "AGIBOT 支持 Windows、Mac（Apple）（Intel）操作系统。"
+      },
+      {
+        "question": "个人版和市值管理版的区别",
+        "answer": "个人版是免费的，提供基本的交易功能，而市值管理版提供高级交易功能和市值管理功能。"
+      }
+    ]
+  }
+} 

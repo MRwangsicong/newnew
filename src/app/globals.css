@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 41, 12, 54;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@font-face {
+  font-family: 'Redzone';
+  src: url('/fonts/VTFRedzone-Classic.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0000-FFFF, U+4E00-9FFF;
+}
+
+@font-face {
+  font-family: 'Nominee';
+  src: url('/fonts/Nominee-Medium.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0000-FFFF, U+4E00-9FFF;
+}
+
+/* Chinese text optimizations */
+[lang="zh"] {
+  /* Adjust letter spacing for Chinese characters */
+  letter-spacing: 0.05em;
+  /* Improve line height for Chinese text */
+  line-height: 1.8;
+}
+
+[lang="zh"] h1,
+[lang="zh"] h2,
+[lang="zh"] h3,
+[lang="zh"] h4 {
+  /* Adjust heading spacing for Chinese */
+  letter-spacing: 0.1em;
+  /* Add proper line height for headings */
+  line-height: 1.5;
+}
+
+[lang="zh"] .font-redzone {
+  /* Adjust font weight for better Chinese display */
+  font-weight: 500;
+  /* Add proper character spacing */
+  letter-spacing: 0.15em;
+}
+
+[lang="zh"] .font-nominee {
+  /* Optimize body text for Chinese */
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
