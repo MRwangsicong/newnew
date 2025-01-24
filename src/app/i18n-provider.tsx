@@ -1,13 +1,21 @@
+'use client';
+
+import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { ReactNode } from 'react';
-import { appWithTranslation } from 'next-i18next';
-import { AppProps } from 'next/app';
 
-type ExtendedAppProps = AppProps & {
+type Props = {
   children: ReactNode;
+  locale: string;
 };
 
-const I18nProvider = ({ children }: ExtendedAppProps) => {
-  return <>{children}</>;
+const I18nProvider = ({ children, locale }: Props) => {
+  const messages = useMessages();
+  
+  return (
+    <NextIntlClientProvider messages={messages} locale={locale}>
+      {children}
+    </NextIntlClientProvider>
+  );
 };
 
-export default appWithTranslation(I18nProvider);
+export default I18nProvider;
