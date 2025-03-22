@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "您在寻找区块链工具时遇到困难吗？",
-    "description": "也许您已经听说过这些传言，而且声音越来越大。AIGbot 是由加密货币领域的顶尖程序员开发的。我们专注于服务和用户体验，目标是解决加密货币爱好者的困扰",
+    "description": "也许您已经听说过这些传言，而且声音越来越大。AGIBOT 是由加密货币领域的顶尖程序员开发的。我们专注于服务和用户体验，目标是解决加密货币爱好者的困扰",
     "getDownload": "立即下载",
     "joinTelegram": "加入 Telegram"
   },
@@ -68,7 +68,7 @@
     },
     "security": {
       "title": "安全性",
-      "description": "AIGbot 将您的资金安全放在首位，AIGbot 独立于您的本地计算机，这就是为什么我们不做网页版！"
+      "description": "AGIBOT 将您的资金安全放在首位，AGIBOT 独立于您的本地计算机，这就是为什么我们不做网页版！"
     },
     "trustworthiness": {
       "title": "可信赖",
@@ -104,7 +104,7 @@
         "question": "如何下载和登录"
       },
       {
-        "question": "AIGBOT 版本",
+        "question": "AGIBOT 版本",
         "answer": "AGIBOT 有个人免费版和市值管理付费版。"
       },
       {
