@@ -5,6 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AGIBOT 下载</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 6%;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .modal-content {
+      background-color: #1f1f1f2c;
+      margin: 15% auto;
+      padding: 18px;
+      border: 1px solid #888;
+      width: 16%; 
+      color: #ffffff; 
+      text-align: center;
+    }
+    
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -23,15 +60,15 @@
       <section class="download-section">
         <h2 id="evm-title">EVM 链（付费）</h2>
         <div class="download-items">
-          <a href="Download/evm-win.exe" class="download-item">
+          <a href="#" class="download-item" onclick="showModal()">
             <img src="/images/win.svg" alt="Windows" />
             <p id="win-text">Windows</p>
           </a>
-          <a href="Download/evm-mac-intel.pkg" class="download-item">
+          <a href="#" class="download-item" onclick="showModal()">
             <img src="/images/mac.svg" alt="Mac Intel" /> 
             <p id="macIntel-text">Mac（Intel 芯片）</p>
           </a>
-          <a href="Download/evm-mac-arm.pkg" class="download-item">
+          <a href="#" class="download-item" onclick="showModal()">
             <img src="/images/mac.svg" alt="Mac ARM" />
             <p id="macArm-text">Mac（Apple 芯片）</p>
           </a>
@@ -65,15 +102,15 @@
         <div class="sub-section">
           <h3 id="paid-title">付费版</h3>
           <div class="download-items">
-            <a href="Download/AGIbotdev.exe" class="download-item">
+            <a href="#" class="download-item" onclick="showModal()">
               <img src="/images/win.svg" alt="Windows" />
               <p id="paid-win-text">Windows</p>
             </a>
-            <a href="Download/AGIbotdevIntel.pkg" class="download-item">
+            <a href="#" class="download-item" onclick="showModal()">
               <img src="/images/mac.svg" alt="Mac Intel" />
               <p id="paid-macIntel-text">Mac（Intel 芯片）</p>
             </a>
-            <a href="Download/AGIbotdevApple.pkg" class="download-item">
+            <a href="#" class="download-item" onclick="showModal()">
               <img src="/images/mac.svg" alt="Mac ARM" />
               <p id="paid-macArm-text">Mac（Apple 芯片）</p>
             </a>
@@ -81,6 +118,16 @@
         </div>
       </section>
     </main>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <p id="tishi-text"> EVM即将上线，敬请期待 </p>
+        
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -93,5 +140,22 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    function showModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    // 关闭模态框的逻辑
+    window.onclick = function(event) {
+      var modal = document.getElementById("myModal");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
