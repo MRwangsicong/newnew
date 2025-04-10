@@ -20,7 +20,8 @@ function updateText(lang) {
             macArm: "Mac（Apple 芯片）",
             download: "点击下载",
             copyright: "© 2025 AGIBOT. 版权所有。",
-            followUs: "关注我们"
+            followUs: "关注我们",
+            tishi:  "EVM即将上线 敬请期待"
         },
         en: {
             title: "AGIBOT Download",
@@ -33,7 +34,8 @@ function updateText(lang) {
             macArm: "Mac (Apple Silicon)",
             download: "Download",
             copyright: "© 2025 AGIBOT. All rights reserved.",
-            followUs: "Follow us"
+            followUs: "Follow us",
+            tishi: "EVM is coming soon"
         }
     };
 
@@ -54,5 +56,7 @@ function updateText(lang) {
     document.querySelector('#paid-macIntel-text').textContent = t.macIntel;
     document.querySelector('#paid-macArm-text').textContent = t.macArm;
     document.querySelector('#copyright-text').textContent = t.copyright;
+    document.querySelector('#tishi-text').textContent = t.tishi;
+
     document.querySelector('.language-toggle').textContent = lang === "zh" ? "EN" : "中文";
 }
