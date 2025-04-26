@@ -12,7 +12,8 @@ function updateText(lang) {
         zh: {
             title: "AGIBOT 下载",
             evm: "EVM 链（付费）",
-            sol: "Solana 链（免费 & 付费）",
+            sol: "Solana 链（免费）",
+            sol1: "Solana 链（付费）",
             free: "免费版",
             paid: "付费版",
             win: "Windows",
@@ -26,7 +27,8 @@ function updateText(lang) {
         en: {
             title: "AGIBOT Download",
             evm: "EVM Chain (Paid)",
-            sol: "Solana Chain (Free & Paid)",
+            sol: "Solana Chain (Free)",
+            sol1: "Solana Chain (Paid)",
             free: "Free Edition",
             paid: "Paid Edition",
             win: "Windows",
@@ -44,7 +46,8 @@ function updateText(lang) {
     document.querySelector('#site-title').textContent = "AGIBOT";
     document.querySelector('#evm-title').textContent = t.evm;
     document.querySelector('#sol-title').textContent = t.sol;
-    document.querySelector('#free-title').textContent = t.free;
+    document.querySelector('#sol1-title').textContent = t.sol1;
+document.querySelector('#free-title').textContent = t.free;
     document.querySelector('#paid-title').textContent = t.paid;
     document.querySelector('#win-text').textContent = t.win;
     document.querySelector('#macIntel-text').textContent = t.macIntel;
