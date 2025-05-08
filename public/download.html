@@ -57,23 +57,26 @@
     <!-- Main Content -->
     <main>
       <!-- EVM Section -->
-      <section class="download-section">
-        <h2 id="evm-title">EVM 链（付费）</h2>
-        <div class="download-items">
-          <a href="#" class="download-item" onclick="showModal()">
-            <img src="/images/win.svg" alt="Windows" />
-            <p id="win-text">Windows</p>
-          </a>
-          <a href="#" class="download-item" onclick="showModal()">
-            <img src="/images/mac.svg" alt="Mac Intel" /> 
-            <p id="macIntel-text">Mac（Intel 芯片）</p>
-          </a>
-          <a href="#" class="download-item" onclick="showModal()">
-            <img src="/images/mac.svg" alt="Mac ARM" />
-            <p id="macArm-text">Mac（Apple 芯片）</p>
-          </a>
-        </div>
-      </section>
+<section class="download-section">
+  <h2 id="evm-title">EVM 链（付费）</h2>
+  <div class="sub-section">
+    <h3>付费版</h3>
+    <div class="download-items">
+      <a href="Download/AGIBOT_EVM.exe" class="download-item">
+        <img src="/images/win.svg" alt="Windows" />
+        <p>Windows</p>
+      </a>
+      <a href="Download/AGIBOT_EVM_I.pkg" class="download-item">
+        <img src="/images/mac.svg" alt="Mac Intel" />
+        <p>Mac（Intel 芯片）</p>
+      </a>
+      <a href="Download/AGIBOT_EVM_M.pkg" class="download-item">
+        <img src="/images/mac.svg" alt="Mac ARM" />
+        <p>Mac（Apple 芯片）</p>
+      </a>
+    </div>
+  </div>
+</section>
 
       <!-- Solana Section -->
       <section class="download-section">
@@ -127,7 +130,6 @@
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
 
-        <p id="tishi-text"> EVM即将上线，敬请期待 </p>
         
       </div>
     </div>
@@ -152,13 +154,7 @@
       document.getElementById("myModal").style.display = "none";
     }
 
-    // 关闭模态框的逻辑
-    window.onclick = function(event) {
-      var modal = document.getElementById("myModal");
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
+    
   </script>
 </body>
 </html>
