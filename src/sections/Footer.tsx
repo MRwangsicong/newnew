@@ -7,7 +7,7 @@ import { FaBook } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
 
 const socialIcons = [
-  { Icon: AiOutlineTwitter, href: "https://x.com/AGIBotApp" },
+  { Icon: AiOutlineTwitter, href: "https://x.com/AGIBOT_App" },
   { Icon: FaTelegramPlane, href: "https://t.me/AGIBot_official" },
   { Icon: FaBook, href: "https://agibotapp.gitbook.io/agibot" },
 ];
